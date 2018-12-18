@@ -25,14 +25,8 @@ def ticket.date
 end
 
 
-print "This ticket is for: "
-print ticket.event + ", at "
-print ticket.venue + ", on "
-puts ticket.date + "."
-print "The performer is "
-puts ticket.performer + "."
-print "The seat is "
-print ticket.seat + ", "
-print "and it costs $"
-puts "%.2f." % ticket.price
 
+
+puts "This ticket is for an #{ticket.event} on #{ticket.date}:"
+puts "The performer is #{ticket.performer} and it will take place at #{ticket.venue}"
+puts "Your ticket price is #{ticket.price} for the seat #{ticket.seat}"
